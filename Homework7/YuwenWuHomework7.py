@@ -197,12 +197,12 @@ finally :
 ## Write data to csv document
 ## Write file
 aapl = pd.DataFrame(itstockdata['AAPL'])  
-aapl.to_csv('AAPL')
+aapl.to_csv('AAPL.csv')
 
 ## If we want to find the end price of AAPL during this period 
 # Using while loop 
 # Reading file
-with open(r'AAPL', 'r', encoding='utf8') as file:
+with open(r'AAPL.csv', 'r', encoding='utf8') as file:
     line = file.readline().replace('\n', '')
     while line != '':
         line = file.readline().replace('\n', '')
